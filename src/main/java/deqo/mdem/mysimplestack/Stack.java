@@ -26,6 +26,7 @@ public class Stack implements ISimpleStack{
             buffer[nbItems] = item;
             nbItems++;
         }
+        System.out.println("Item ajouté!");
     }
 
     @Override
@@ -45,6 +46,7 @@ public class Stack implements ISimpleStack{
         } else {
             item = buffer[nbItems-1];
             nbItems--;
+            System.out.println("Element pop");
             return item;
         }
     }
